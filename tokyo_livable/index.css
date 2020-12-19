@@ -1,0 +1,14 @@
+header{
+  background-color: #00afff;
+  height: 70px;
+}
+.header img{
+  margin: 20px 50px;
+}
+
+.top{
+  background-image: url(bg.jpg);
+  text-align: center;
+  height: 595px;
+  text-align: center;
+}

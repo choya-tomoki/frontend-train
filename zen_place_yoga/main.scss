@@ -1,0 +1,280 @@
+//768px以下の設定
+@media(max-width: 768px){
+  #qualva-btn{
+    width: 100%;
+  }
+}
+//769px以上の設定
+@media screen and (min-width: 768px){
+  #qualva-btn{
+    width: 250px;
+  }
+}
+//600px以上の設定
+@media(min-width: 600px){
+  .hidden-menu{
+    display: none;
+  }
+  .wrapper{
+    width: 640px;
+    h1{
+      font-size: 18px;
+    }
+  }
+}
+@media(max-width: 600px){
+  .wrapper{
+    width: 100%;
+    h1{
+      font-size: 14px;
+    }
+  }
+
+}
+main{
+  transition: all 0.5s;
+  text-align: center;
+  .wrapper{
+    display: inline-block;
+    .contents{
+      display: block;
+      width: 100%;
+      h1{
+        background-color: #006faf;
+        margin: 10px 5px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 20px;
+        color: white;
+        height: 40px;
+        width: auto;
+      }
+      img{
+        width: 100%;
+      }
+      .reservation{
+        display: inline-block;
+        margin: 30px auto;
+        padding: 20px 0;
+        font-size: 24px;
+        line-height: 1;
+        color: #0070bc;
+        border: 1px solid;
+        text-align: center;
+        border-radius: 25px;
+        width: 90%;
+        max-width: 400px;
+      }
+      .menu{
+        display: inline-block;
+        text-align: center;
+        margin: 30px 0;
+        width: 94%;
+        color: #333333;
+        font-size: 14px;
+        .menubox{
+          display: inline-block;
+          border: 1px solid #808080;
+          text-align: left;
+          margin: 10px 0;
+          width: 100%;
+          padding: 15px 0 0;
+          ul{
+            list-style-type: square;
+            text-decoration: underline;
+            line-height: 2;
+          }
+        }
+      }
+      .advantage{
+        display: inline-block;
+        width: 94%;
+        background-color: #eeeeee;
+        text-align: center;
+        padding: 20px 0;
+        margin: 10px 0;
+        h2{
+          font-size: 24px;
+          font-family: serif;
+        }
+        .advantage_inbox{
+          display: inline-block;
+          background-color: white;
+          text-align: center;
+          width: 94%;
+          border-radius: 5px;
+          padding-top: 15px;
+        }
+      }
+      .tempurture_text{
+        display: inline-block;
+        padding: 20px;
+        text-align: left;
+        font-size: 14px;
+        margin: 20px 0;
+      }
+      .lesson_intro{
+        width: 94%;
+        display: inline-block;
+        h3{
+          font-size: 20px;
+          margin: 30px 0;
+        }
+        h4{
+          font-size: 19px;
+          margin: 15px;
+        }
+        p{
+          text-align: left;
+          font-size: 15px;
+        }
+        .intro_contents_wrapper{
+          display: inline-block;
+          margin-bottom: 30px;
+          .intro_contents{
+            display: flex;
+            flex-direction: row;
+            .intro_contents_left{
+              flex-grow: 1;
+              padding-right: 15px;
+              max-width: 300px;
+            }
+            .intro_contents_right{
+              flex-grow: 1;
+              padding-left: 15px;
+              max-width: 300px;
+            }
+
+          }
+        }
+        .whatis{
+          display: inline-block;
+          background-color: #b0e0e6;
+          height: 50px;
+          width: 100%;
+          line-height: 50px;
+          padding-left: 24px;
+          p{
+            font-size: 24px;
+            text-align: left;
+            font-family: serif;
+            color: white;
+          }
+        }
+      }
+      .voice{
+        display: inline-block;
+        text-align: center;
+        h3{
+          font-size: 24px;
+          font-family: serif;
+          margin: 30px 0 15px;
+        }
+        .voicebox{
+          background-color: #ddffff;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+}
+main.open{
+  transform: translateX(292px);
+  transition: all 0.5s;
+}
+.hidden-menu{
+  text-align: center;
+  .menu-wrapper{
+    display: inline-block;
+
+    .main-menu{
+      list-style-type: none;
+      display: flex;
+      padding-left: 0;
+      .btn-menu{
+        padding: 0;
+      }
+      .logo{
+        padding-top: 10px;
+      }
+      a{
+        background: transparent;
+      }
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    #sidr{
+      list-style-type: none;
+      display: block;
+      position: fixed;
+      right: auto;
+      top: 0;
+      left: 0;
+      width: 284px;
+      z-index: 10000;
+      background-color: #333;
+      font-size: 15px;
+      box-shadow: 0 0 5px 5px #222;
+      transform: translate(-292px);
+      transition: all .5s;
+      padding-bottom: 100%;
+
+      ul{
+        padding: 0;
+        margin: 0 0 ;
+        border-bottom: 1px solid #4d4d4d;
+        :hover{
+          background-color: #555;
+        }
+
+
+        li{
+          display: block;
+          height: 60px;
+          text-align: left;
+          line-height: 60px;
+          border-bottom: 1px solid #4d4d4d;
+          border-top: 1px solid #4d4d4d;
+          padding-left: 20px;
+
+        }
+        a{
+          text-decoration: none;
+          color: white;
+
+        }
+      }
+    }
+  }
+}
+#qualva-btn{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    .qualvaBtn{
+      background-color: #006fb1;
+      text-align: center;
+      color: white;
+      width: 100%;
+      padding: 10px 0;
+      display: block;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+    i{
+      position: absolute;
+      right: 20px;
+      top: 13px;
+      right: 10px;
+    }
+}
+#pagetop{
+  position: fixed;
+  bottom: 90px;
+  right: 7%;
+  padding: 0px;
+}

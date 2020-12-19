@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sample</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <style media="screen">
+      .jumbotron{
+        background-image: url(picture/top-phpto.jpeg);
+        background-repeat: repeat;
+        text-align: center;
+        margin-top: 0px;
+        padding-bottom: 80px;
+      }
+      .mytitle{
+        padding-top: 80px;
+      }
+      #email{
+        width: 300px;
+      }
+      hr{
+        border-color: green;
+      }
+      body{
+        position: relative;
+      }
+      .summary{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 70px;
+      }
+      .movie{
+        text-align: center;
+        margin: 60px 20px; 0 20px;
+      }
+      footer{
+        text-align: center;
+        background-color: #00cc33;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        margin-top: 60px;
+      }
+      .applogo{
+        width: 200px;
+      }
+    </style>
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar" data-offset="150">
+
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">My App</a>
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#jumbotron">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#movie">movie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#download">Download The App</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Email" aria-label="Email">
+          <input class="form-control mr-sm-2" type="search" placeholder="Password" aria-label="Password">
+          <button class="btn btn-success my-2 my-sm-0" type="submit">Login</button>
+        </form>
+
+    </nav>
+    <div class="jumbotron jumbotron-fluid" id="jumbotron">
+      <div class="container">
+      <h1 class="display-2 text-success mytitle">My Favorite Singers!</h1>
+      <p class="lead  text-success">This is why YOU should check this fantastic singers!</p>
+      <hr class="my-4">
+      <p class="text-success">Want to know more? Join our mailing list!</p>
+        <div class="container">
+          <form class="row justify-content-center">
+          <div class="form-inline">
+            <div class="form-group">
+              <label class="sr-only" for="email">Email address</label>
+              <div class="input-group">
+                <div class="input-group-text">@</div>
+                <input type="email" class="form-control" id="email" placeholder="Your email">
+              </div>
+            </div>
+              <button type="submit" class="btn btn-primary">Sign up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="summary">
+        <h1>Why These Singers Are Awesome</h1>
+        <p class="lead">Summary, once again, of your app's awesomeness</p>
+      </div>
+      <div id="about">
+        <div class="card-group">
+          <div class="card border-success mb-3">
+            <div class="loop_wrap">
+              <a href="https://ygex.jp/blackpink/"><img src="picture/blackpink.jpg" class="card-img-top" alt="BLACKPINK"></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">BLACKPINK</h5>
+              <p class="card-text">2016年にYGエンターテインメントによって結成された。メンバー同士が親しい友人であることから、グループリーダーを決めていない。2016年8月8日に、シングルアルバム「SQUARE ONE」からのシングル「BOOMBAYAH」「WHISTLE」等でデビューを果たした。公式ファンクラブ名はBLINK』。ヒット曲である「DDU-DU DDU-DU」のMVは、リリースから10ヶ月内に動画再生サイト・YouTubeにおける再生回数が9億を突破した。</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card border-success mb-3">
+            <a href="https://toho-jp.net/"><img src="picture/tohoshinki.jpg" class="card-img-top" alt="東方神起"></a>
+            <div class="card-body">
+              <h5 class="card-title">東方神起</h5>
+              <p class="card-text">韓国出身の男性デュオ。レコード会社兼芸能事務所のSMエンターテインメントに所属し、韓国や日本を中心に活動している。</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card border-success mb-3">
+            <a href="https://exo-jp.net/"><img src="picture/exo.png" class="card-img-top" alt="EXO"></a>
+            <div class="card-body">
+              <h5 class="card-title">EXO</h5>
+              <p class="card-text">SMエンターテインメント所属の男性アイドルグループ。2012年4月8日韓国と中国でデビュー。2015年11月4日、シングル「Love Me Right 〜romantic universe〜」で日本デビュー。</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="movie" class="movie">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2S24-y0Ij3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="movie">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PfUlE2LlGro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="movie">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KSH-FVVtTf0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <footer id="download">
+      <h2>Download the app!</h2>
+      <p class="lead">Really, why should I download this app??</p>
+      <a href="https://www.apple.com/jp/search/blackpink?src=globalnav"><img class="applogo" src="picture/App-Store-Icon.png" alt=""></a>
+    </footer>
+  </body>
+</html>
